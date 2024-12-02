@@ -45,76 +45,40 @@ python -m bitcoin_predictor.main \
     --batch-size 32 \
     --epochs 100
 
-# Project Structure
-bitcoin_predictor/
-├── src/                  # Core implementation
-│   ├── data_processor.py # Data processing
-│   ├── model.py         # LSTM architecture
-│   ├── prediction.py    # Prediction engine
-│   └── training.py      # Training logic
-├── utils/               # Utilities
-├── tests/              # Unit tests
-└── data/               # Data storage
-
-# Model Performance
-
-Recent model metrics:
-
-- MSE: 107,119,960
-- RMSE: 10,349.88
-- MAE: 7,973.74
-- R2 Score: 0.728
-- Accuracy: 82.03%
-- Directional Accuracy: 49.80%
-
-# Development
-Running tests:
-python -m unittest discover bitcoin_predictor/tests
-
-I'll help you create a complete 
-
-README.md
-
- based on the project structure and codebase:
-
 # Bitcoin Price Predictor
 
-A deep learning model for predicting Bitcoin prices using LSTM neural networks and technical indicators.
+An advanced deep learning model for predicting Bitcoin prices using LSTM neural networks and technical analysis.
 
-## Features
+![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0+-orange.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-- Real-time Bitcoin price data fetching using 
+## 🚀 Features
 
-yfinance
+- Real-time Bitcoin price data fetching via `yfinance`
+- Advanced technical indicators (MA, RSI, MACD) 
+- LSTM neural network with dropout and batch normalization
+- Comprehensive visualization suite
+- Multiple performance metrics
 
+## 📊 Latest Model Performance
 
-- Technical indicators (MA, RSI, MACD) for feature engineering via 
+| Metric | Value |
+|--------|-------|
+| MSE | 107,119,960 |
+| RMSE | 10,349.88 |
+| MAE | 7,973.74 |
+| R² Score | 0.728 |
+| Accuracy | 82.03% |
 
-DataProcessor
+## 🛠️ Installation
 
-
-- LSTM-based deep learning model with dropout and batch normalization using 
-
-BitcoinPriceModel
-
-
-- Comprehensive visualization tools for model performance analysis via 
-
-PerformanceVisualizer
-
-
-- Model evaluation with multiple metrics (MSE, RMSE, MAE, R2, MAPE)
-
-## Installation
-
-1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd bitcoin_predictor
-```
+# Clone repository
+git clone https://github.com/yourusername/bitcoin-price-predictor.git
+cd bitcoin-price-predictor
 
-2. Install dependencies:
-```bash
+# Install dependencies
 pip install -e .
 ```
 
@@ -137,47 +101,18 @@ python -m bitcoin_predictor.main \
     --epochs 100
 ```
 
-## Model Architecture
-
-- Sequential LSTM model with bidirectional layers
-- Dropout and BatchNormalization for regularization
-- Custom learning rate scheduling
-- Huber loss function for robustness against outliers
-
-## Features Used
-
-The model uses the following technical indicators:
-- Moving Averages (7, 21, 50 day)
-- Relative Strength Index (RSI)
-- Moving Average Convergence Divergence (MACD)
-- Volume Moving Average
-
-## Model Performance
-
-Recent model metrics:
-- MSE: 107,119,960
-- RMSE: 10,349.88
-- MAE: 7,973.74
-- R2 Score: 0.728
-- Accuracy: 82.03%
-- Directional Accuracy: 49.80%
-
 ## Project Structure
 
 ```
 bitcoin_predictor/
-├── src/               # Core implementation
-│   ├── data_processor.py   # Data processing and feature engineering
-│   ├── model.py           # LSTM model architecture
-│   ├── prediction.py      # Prediction engine
-│   └── training.py        # Model training logic
-├── utils/             # Utility functions
-│   ├── config.py          # Configuration classes
-│   ├── visualization.py   # Plotting functions
-│   ├── metrics_viz.py     # Metrics visualization
-│   └── performance_viz.py # Performance analysis
-├── tests/             # Unit tests
-└── data/              # Data storage
+├── src/                  # Core implementation
+│   ├── data_processor.py # Data processing
+│   ├── model.py          # LSTM architecture
+│   ├── prediction.py     # Prediction engine
+│   └── training.py       # Training logic
+├── utils/                # Utilities
+├── tests/                # Unit tests
+└── data/                 # Data storage
 ```
 
 ## Development
@@ -190,11 +125,7 @@ python -m unittest discover bitcoin_predictor/tests
 
 ## Visualizations
 
-The model generates several visualizations in the 
-
-visualizations
-
- directory:
+The model generates several visualizations in the `visualizations` directory:
 - Training history plots
 - Prediction vs Actual comparisons
 - Feature correlation heatmaps
@@ -214,11 +145,7 @@ visualizations
 
 ## Logging
 
-The project uses Python's logging framework. Logs are stored in the 
-
-logs
-
- directory with timestamped filenames.
+The project uses Python's logging framework. Logs are stored in the `logs` directory with timestamped filenames.
 
 ## Contributing
 
@@ -227,6 +154,4 @@ logs
 3. Commit your changes
 4. Push to the branch
 5. Create a Pull Request
-
-## License
 
