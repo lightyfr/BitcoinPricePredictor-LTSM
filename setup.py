@@ -11,6 +11,8 @@ setup(
         "scikit-learn",
         "tensorflow",
         "yfinance",
-        "matplotlib"
+        "matplotlib",
+        "seaborn",
+        "python-graphviz"
     ]
 )

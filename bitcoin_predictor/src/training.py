@@ -94,3 +94,28 @@ class ModelTrainer:
         except Exception as e:
             logger.error(f"Error during prediction: {e}")
             raise
+
+    def save_model(self, path: Path) -> None:
+        """Save model to specified path"""
+        try:
+            # Create parent directory if it doesn't exist
+            path.parent.mkdir(parents=True, exist_ok=True)
+            
+            # Save model
+            self.model.model.save(path)
+            logger.info(f"Model saved successfully to {path}")
+            
+        except Exception as e:
+            logger.error(f"Error saving model: {e}")
+            raise
+
+    def load_model(self, path: Path) -> None:
+        """Load model from specified path"""
+        try:
+            # Load model
+            self.model.model = tf.keras.models.load_model(path)
+            logger.info(f"Model loaded successfully from {path}")
+            
+        except Exception as e:
+            logger.error(f"Error loading model: {e}")
+            raise
