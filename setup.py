@@ -13,6 +13,6 @@ setup(
         "yfinance",
         "matplotlib",
         "seaborn",
-        "python-graphviz"
+        "graphviz"
     ]
 )
