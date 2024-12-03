@@ -1,0 +1,21 @@
+Model Performance Report
+=====================
+Generated on: 2024-12-03 01:47:16
+
+Key Metrics:
+------------
+MSE: 53790828.1633
+RMSE: 7334.2231
+MAE: 4434.0508
+R2: 0.8634
+Explained_Variance: 0.8820
+MAPE: 8.3350
+Accuracy: 91.6650
+Directional_Accuracy: 0.0000
+
+Training Summary:
+-----------------
+Final training loss: 0.0090
+Final validation loss: 0.0226
+Best validation loss: 0.0083
+Number of epochs: 100
