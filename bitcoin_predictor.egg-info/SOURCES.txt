@@ -1,3 +1,4 @@
+LICENSE
 README.md
 setup.py
 bitcoin_predictor/__init__.py
@@ -19,4 +20,6 @@ bitcoin_predictor/tests/test_prediction.py
 bitcoin_predictor/utils/__init__.py
 bitcoin_predictor/utils/config.py
 bitcoin_predictor/utils/logger.py
+bitcoin_predictor/utils/metrics_viz.py
+bitcoin_predictor/utils/performance_viz.py
 bitcoin_predictor/utils/visualization.py

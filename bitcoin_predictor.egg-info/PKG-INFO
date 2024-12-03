@@ -1,9 +1,12 @@
 Metadata-Version: 2.1
 Name: bitcoin_predictor
 Version: 0.1
+License-File: LICENSE
 Requires-Dist: numpy
 Requires-Dist: pandas
 Requires-Dist: scikit-learn
 Requires-Dist: tensorflow
 Requires-Dist: yfinance
 Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: graphviz

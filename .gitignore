@@ -1,0 +1,33 @@
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore environment variables file
+.env
+
+# Ignore data files
+*.csv
+*.json
+
+# Ignore model files
+*.h5
+*.pkl
+
+# Ignore logs
+*.log
+
+# Ignore any other files or directories generated during development
+.DS_Store
+Thumbs.db
